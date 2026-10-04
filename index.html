@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskly - To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="todo-container">
+
+        <section class="todo-card">
+
+            <div class="header">
+                <div>
+                    <p class="small-title">MY DAY ✦</p>
+                    <h1>My Tasks</h1>
+                    <p class="subtitle">Organize your day, one task at a time.</p>
+                </div>
+
+                <div class="date-box">
+                    <span>04</span>
+                    <small>OCT</small>
+                </div>
+            </div>
+
+            <div class="progress-area">
+                <div class="progress-text">
+                    <span>Today's Progress</span>
+                    <span id="progress-text">0%</span>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <input 
+                    type="text" 
+                    id="taskInput" 
+                    placeholder="What needs to be done?"
+                >
+
+                <button id="addBtn">+</button>
+            </div>
+
+            <div class="filters">
+                <button class="filter active">All</button>
+                <button class="filter">Pending</button>
+                <button class="filter">Completed</button>
+            </div>
+
+            <ul class="task-list" id="taskList">
+
+                <!-- JS se tasks yahan add hongi -->
+
+            </ul>
+
+            <div class="empty-state" id="emptyState">
+                <div class="empty-icon">✦</div>
+                <h3>Nothing here yet</h3>
+                <p>Add a task and make your day productive.</p>
+            </div>
+
+            <div class="footer">
+                <span><b id="taskCount">0</b> tasks</span>
+                <button id="clearBtn">Clear Completed</button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
